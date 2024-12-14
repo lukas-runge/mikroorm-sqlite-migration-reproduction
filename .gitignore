@@ -4,3 +4,6 @@ sqlite.db
 dist
 temp
 package-lock.json
+
+/migrations
+/dbs

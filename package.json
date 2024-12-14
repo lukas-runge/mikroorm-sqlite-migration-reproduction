@@ -1,21 +1,22 @@
 {
-  "name": "@mikro-orm/reproduction",
-  "private": true,
+  "name": "mikroorm-sqlite-migration-reproduction",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "jest",
-    "test": "jest"
+    "test": "jest --verbose --detectOpenHandles --forceExit"
   },
-  "author": "Martin Adamek",
+  "author": "Lukas Runge",
   "license": "MIT",
   "dependencies": {
     "@mikro-orm/core": "next",
+    "@mikro-orm/migrations": "next",
     "@mikro-orm/sqlite": "next",
+    "fs-extra": "^11.2.0",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
     "@types/jest": "^29.5.8",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
